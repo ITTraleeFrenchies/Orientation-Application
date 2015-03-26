@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Orientation Application- IT Tralee</title>
+
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="css/form.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide', 'pageshadow' ],
+					header		: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+						content		: '<a href="http://www.ittralee.ie/en/">Visit the website of the IT Tralee</a>'
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				Orientation Application - Institute of Technology of Tralee
+			</div>
+			<div class="content">
+						<form action="" method="post" name="">
+						<div class="part_align">
+								<h1> Map</h1>
+								<br>
+								<br>
+								<label for="select_campus">Choose the campus</label>
+								<select name="select_campus" onchange:>
+								    <option value="north">North Campus</option>
+								    <option value="south">South Campus</option>
+								</select>
+								<br>
+								<br>
+								<label for="select_place">Choose a specific place</label>
+								<select name="select_place">
+									<option value="accessoffice">Access Office</option>
+									<option value="cafeteria">Cafeteria</option>
+									<option value="canteen">Canteen</option>
+									<option value="careersoffice">Careers Office</option>
+									<option value="chaplaincyservices">Chaplaincy services</option>
+									<option value="charitiescommitee">Charities Comittee</option>
+									<option value="creche">Creche</option>
+									<option value="dyslexiasoffice">Dyslexia Support Office</option>
+									<option value="healthservices">Health services</option>
+									<option value="financeoffice">Finance Office</option>
+								    <option value="library">Library</option>
+								    <option value="sportsoffice">Sport Office</option>
+								    <option value="studentcounsellor">Student counsellor</option>
+								    <option value="studentservices">Student services</option>
+								    <option value="thecube">The cube</option>
+								</select>
+								<br>
+								<br>
+								<label for="search_place">Search a specific place</label>
+							    <input type="search_place" name="search" placeholder="T102, library..." maxlength="50"/>
+								<br>
+								<br>
+								<input type="submit" value="Search">
+							</div>
+						</form>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Map</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="sports.html">Sports/Activities</a></li>
+					<li><a href="#about">Admission</a>
+						<ul>
+							<li><a href="#about/fees">Fees</a></li>
+							<li><a href="#about/deadline">Deadline</a></li>
+							<li><a href="#about/documents">Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Information</a>
+						<ul>
+							<li><a href="library.html">Library</a></li>
+							<li><a href="#about/shopcanteen">Shop/Canteen</a></li>
+							<li><a href="#about/transports">Transports</a></li>
+							<li><a href="accomodation.html">Accomodation</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</nav>
+			
+		
+
+
+		</div>
+	</body>
+</html>
+
+<!-- 
+<li><a href="#about/team">Fees</a>
+								<ul>
+									<li><a href="#about/team/management">Management</a></li>
+									<li><a href="#about/team/sales">Sales</a></li>
+									<li><a href="#about/team/development">Development</a></li>
+								</ul>
+							</li>
+
+-->

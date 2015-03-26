@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>Orientation Application- IT Tralee</title>
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide', 'pageshadow' ],
+					header		: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+						content		: '<a href="http://www.ittralee.ie/en/">Visit the website of the IT Tralee</a>'
+					}
+				});
+			});
+
+			var headertext = [];
+			var headers = document.querySelectorAll("th"),
+			tablerows = document.querySelectorAll("th"),
+			tablebody = document.querySelector("tbody");
+			for(var i = 0; i < headers.length; i++) {
+			var current = headers[i];
+			headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+			}
+			for (var i = 0, row; row = tablebody.rows[i]; i++) {
+			for (var j = 0, col; col = row.cells[j]; j++) {
+			col.setAttribute("data-th", headertext[j]);
+			} }
+		</script>
+		<style> 
+				table caption {
+				margin: 1rem;
+				}
+				table {
+				border-collapse: collapse;
+				background: #333; color: #fff;
+				text-rendering: optimizeLegibility;
+				border-radius: 5px;
+				}
+				table thead th { font-weight: 600; }
+				table thead th, table tbody td {
+				padding: .8rem; 
+				}
+				table tbody td {
+				padding: .8rem; 
+				color: #444; background: #eee;
+				}
+				table tbody tr:not(:last-child) {
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				}
+
+				@media screen and (max-width: 600px) {
+				table caption { background-image: none; }
+				table thead { display: none; }
+				table tbody td { display: block; padding: .6rem; }
+				table tbody tr td:first-child { background: #333; color: #fff; }
+					table tbody td:before {
+					content: attr(data-th); font-weight: bold;
+					display: inline-block; width: 6rem;
+					}
+				}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				Orientation Application - Institute of Technology of Tralee
+			</div>
+			<div class="content">
+								<h1> Library </h1>
+								<strong>Term-Time Opening Hours:</strong> <br>
+								<table class="tg" align="center">
+								<thead>
+								  <tr>
+								  	<th class="tg-031e">Day</th>
+								    <th class="tg-031e">North Campus</th>
+								    <th class="tg-031e">South Campus</th>
+								  </tr>
+								  <tbody>
+								  <tr>
+								  	<td class="tg-031e">Monday</td>
+								    <td class="tg-031e">09:00am - 08:00pm</td>
+								    <td class="tg-031e">09:00am - 01:30pm and 02:30pm - 05:00pm</td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Monday</td>
+								    <td class="tg-031e">09:00am - 08:00pm</td>
+								    <td class="tg-031e">01:30pm - 05:00pm </td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Wednesday</td>
+								    <td class="tg-031e">09:00am - 08:00pm</td>
+								    <td class="tg-031e">09:00am - 01:30pm and 02:30pm - 05:00pm </td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Thursday</td>
+								    <td class="tg-031e">09:00am - 08:00pm</td>
+								    <td class="tg-031e">01:30pm - 05:00pm</td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Friday</td>
+								    <td class="tg-031e">09:00am - 05:00pm	</td>
+								    <td class="tg-031e">09:00am - 01:30pm </td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Saturday</td>
+								    <td class="tg-031e">10:00am - 02:00pm</td>
+								    <td class="tg-031e">10:00am - 02:00pm  (Exam times only)</td>
+								  </tr>
+								  <tr>
+								  	<td class="tg-031e">Sunday</td>
+								    <td class="tg-031e">Closed	</td>
+								    <td class="tg-031e">Closed</td>
+								  </tr>
+								</table>   
+								<br>  
+								<strong>Easter Opening Hours:</strong> <br>
+								<strong>North Campus Library</strong><br>
+								Saturday 28th March: Closed<br>
+								Monday 30th March to Thursday 2nd April: 9am to 5pm<br>
+								Friday 3rd, Saturday 4th and Monday 6th April: Closed<br>
+								Tuesday 7th to Friday 10th April: 9am to 5pm<br>
+								Saturday 11th April: Closed<br><br>
+								<strong>South Campus Library</strong><br>
+								Saturday 28th March: Closed<br>
+								Monday 30th March to Thursday 2nd April: 11am to 1pm<br>
+								Friday 3rd, Saturday 4th and Monday 6th April: Closed<br>
+								Tuesday 7th to Friday 10th April: 11am to 1pm<br>
+								Saturday 11th April: Closed<br><br>
+								Normal term time opening hours will resume on Monday 13th April
+								<br>
+								<br>
+								<p><strong>Reading Room</strong><br>
+								There is a reading room on each campus.  The opening hours for the South Campus Reading Room and the Cube (North Campus Reading Room) are the same as the opening hours for the Institute.  
+								</p>   
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="sports.html">Sports/Activities</a></li>
+					<li><a href="#about">Admission</a>
+						<ul>
+							<li><a href="#about/fees">Fees</a></li>
+							<li><a href="#about/deadline">Deadline</a></li>
+							<li><a href="#about/documents">Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Information</a>
+						<ul>
+							<li><a href="library.html">Library</a></li>
+							<li><a href="#about/shopcanteen">Shop/Canteen</a></li>
+							<li><a href="#about/transports">Transports</a></li>
+							<li><a href="accomodation.html">Accomodation</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</nav>
+		</div>
+
+	</body>
+</html>
+
+<!-- 
+<li><a href="#about/team">Fees</a>
+								<ul>
+									<li><a href="#about/team/management">Management</a></li>
+									<li><a href="#about/team/sales">Sales</a></li>
+									<li><a href="#about/team/development">Development</a></li>
+								</ul>
+							</li>
+
+-->

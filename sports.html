@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>Orientation Application- IT Tralee</title>
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide', 'pageshadow' ],
+					header		: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+						content		: '<a href="http://www.ittralee.ie/en/">Visit the website of the IT Tralee</a>'
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				Orientation Application - Institute of Technology of Tralee
+			</div>
+			<div class="content">
+								<h1> Sports and activities timetable</h1>
+								<br>
+								<br>
+								<label for="select_sport">Choose the sport</label>
+								<select name="select_sport" onchange:>
+								    <option value="hill-walking">Hill-walking club</option>
+								    <option value="rock-climbing">Rock-climbing</option>
+								    <option value="Soccer">Hill-walking club</option>
+								    <option value="tennis">Tennis</option>
+								    <option value="skydiving">Sky diving club</option>
+								    <option value="gaa">GAA Club</option>
+								    <option value="surfing">Surfing club</option>
+								    <option value="squash">Squash</option>
+								    <option value="dadminton">Badminton</option>
+								    <option value="volleyball">Volley-ball</option>
+								    <option value="olympichandball">Olympic Handball</option>
+								    <option value="ladiesfootball">Ladies football</option>
+								    <option value="fresherhurling">Fresher hurling</option>
+								</select>
+								<br>
+								<br>
+								<label for="select_sport">Or choose the society</label>
+								<select name="select_sport" onchange:>
+								    <option value="music">Music Society</option>
+								    <option value="photography">Photography society</option>
+								    <option value="tatoo">Tatoo society</option>
+								    <option value="yoga">Yoga society</option>
+								    <option value="aircroft">Aircroft society</option>
+								    <option value="language">Language society</option>
+								    <option value="zumba">Zumba society</option>
+								    <option value="GamesDev">Games Development society</option>
+								    <option value="lgbt">LGBT society</option>
+								    <option value="international">International society</option>
+								    <option value="pool">Pool society</option>
+								    <option value="wellbeing">Wellbeing society</option>
+								</select>
+								<br>
+								<br>
+								<label for="search">Search</label>
+							    <input type="search" name="search" placeholder="Yoga, GAA..." maxlength="50"/>
+								<br>
+								<br>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="sports.html">Sports/Activities</a></li>
+					<li><a href="#about">Admission</a>
+						<ul>
+							<li><a href="#about/fees">Fees</a></li>
+							<li><a href="#about/deadline">Deadline</a></li>
+							<li><a href="#about/documents">Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Information</a>
+						<ul>
+							<li><a href="library.html">Library</a></li>
+							<li><a href="#about/shopcanteen">Shop/Canteen</a></li>
+							<li><a href="#about/transports">Transports</a></li>
+							<li><a href="accomodation.html">Accomodation</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</nav>
+		</div>
+
+	</body>
+</html>
+
+<!-- 
+<li><a href="#about/team">Fees</a>
+								<ul>
+									<li><a href="#about/team/management">Management</a></li>
+									<li><a href="#about/team/sales">Sales</a></li>
+									<li><a href="#about/team/development">Development</a></li>
+								</ul>
+							</li>
+
+-->
