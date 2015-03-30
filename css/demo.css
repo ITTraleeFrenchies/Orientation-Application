@@ -94,7 +94,7 @@ nav:not(.mm-menu)
 }
 .content
 {
-	padding: 150px 50px 50px 50px;
+	padding: 0 50px 50px 50px;
 	width:60%;
 	margin-left:15%;
 	margin-right:25%;
